@@ -1,0 +1,14 @@
+- name: Potter Dietitian Consulting
+  link: /
+- name: Home
+  link: /
+- name: Our Team
+  link: /team
+- name: The Diet
+  link: /diet
+- name: Services
+  link: /services
+- name: Training
+  link: /training
+- name: Research
+  link: /research
