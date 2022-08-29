@@ -3,7 +3,7 @@
     <li class="logo"><a href="/">Potter Dietitian Consulting</a></li>
     {% for item in site.data.navigation %}
       <li class="item">
-        <a href="{{ item.link }}"
+        <a href="{{ item.link | relative_url }}"
         {% if page.url == item.link %}
           class="current"
         {% endif %}>
