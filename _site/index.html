@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Potter Dietitian Consulting</title>
-  <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico">
+  <link rel="shortcut icon" type="image/ico" href="http://localhost:4000/assets/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Potter Dietitian Consulting</title>
 <meta name="generator" content="Jekyll v4.2.2" />
@@ -25,72 +25,104 @@
 
 </head>
 <body>
-  <nav class="topnav" id="myTopnav">
-  
-    <a href="/"
+  <nav>
+  <ul id="menu" class="menu">
+    <li class="logo"><a href="/">Potter Dietitian Consulting</a></li>
     
-      class="current"
-    >
-      Potter Dietitian Consulting
-    </a>
-  
-    <a href="/"
+      <li class="item">
+        <a href="/"
+        
+          class="current"
+        >
+          Home
+        </a>
+      </li>
     
-      class="current"
-    >
-      Home
-    </a>
-  
-    <a href="/team"
-    >
-      Our Team
-    </a>
-  
-    <a href="/diet"
-    >
-      The Diet
-    </a>
-  
-    <a href="/services"
-    >
-      Services
-    </a>
-  
-    <a href="/training"
-    >
-      Training
-    </a>
-  
-    <a href="/research"
-    >
-      Research
-    </a>
-  
-  <a target="_blank" class="patient-portal" href="https://secure.gethealthie.com/users/sign_in">Patient Portal</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+      <li class="item">
+        <a href="/team"
+        >
+          Our Team
+        </a>
+      </li>
+    
+      <li class="item">
+        <a href="/diet"
+        >
+          The Diet
+        </a>
+      </li>
+    
+      <li class="item">
+        <a href="/services"
+        >
+          Services
+        </a>
+      </li>
+    
+      <li class="item">
+        <a href="/training"
+        >
+          Training
+        </a>
+      </li>
+    
+      <li class="item">
+        <a href="/research"
+        >
+          Research
+        </a>
+      </li>
+    
+    <li class="item">
+      <a target="_blank" class="patient-portal" href="https://secure.gethealthie.com/users/sign_in">Patient Portal</a>
+    </li>
+    <li id="toggle" class="toggle"><a href="#"><i id="icon" class="fas fa-bars"></i></a></li>
+  </ul>
 </nav>
 
+<!-- https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535 -->
+
   <div class="hero">
-  <div class="title-container">
+  <div class="title-container center">
     <h1>Professional Ketogenic Diet<br>Training and Coaching</h1>
-    <a href="/services">See Our Available Services</a>
+    <a class="button" href="/services">See Our Available Services</a>
   </div>
 </div>
-<div class="home-grid-container">
-  <div class="title-block"><h1>Professional Ketogenic Diet Training and Coaching</h1>
+<div class="problem-solution-grid">
+  <div class="problem"><h2>The Ketogenic Diet is a proven treatment for epilepsy. Research also suggests it's effectiveness in treating certain cancers, metabolic disease, Alzheimer's, autism, ALS, MS, Parkinson's, and migraines.</h2>
 </div>
-  <div class="see-services"><div>
-  <p>We can help you achieve your health goals no matter where you live thanks to remote technologies.</p>
-  <p>Remote or in-person training is available for healthcare providers.</p>
-  <a href="/services">See Our Available Services</a>
+  <div class="solution"><p>We provide personalized ketogenic medical nutrition therapy for both children and adults. We also provide transfer of care services from other providers.</p>
+<p>Remote or in-person training is available for healthcare providers.</p>
+<p>Do you need a quick evaluation of your keto plan? <a href="/schedule_one_hour.html">Schedule a 1 hour consult today!</a></p>
 </div>
 </div>
-  <div class="book"><img src="assets/images/migraine-book.png" alt=""><p><em>The Migraine Diet</em> provides a practical meal plan and cookbook that targets the causes of migraines. Relief is possible―and it tastes great.</p><button><a href="https://www.amazon.com/dp/164152961X/ref=cm_sw_em_r_mt_dp_U_3DWYDbP57JYD4">Order on Amazon</a></button>
+<div class="resources-grid">
+  <div class="book-image"><a href="https://www.amazon.com/dp/164152961X/ref=cm_sw_em_r_mt_dp_U_3DWYDbP57JYD4" target="_blank"><img src="assets/images/book.jpg" alt="The Migraine Diet Book"></a>
+</div>
+  <div class="book-text"><div>
+  <h2>The Migraine Diet Book</h2>
+  <p>Discover a diet-based approach to treating chronic migraines. The <em>Migraine Diet</em> adapts the ketogenic diet (eating high fat and low carb foods to alter the way your body burns fuel) into a practical meal plan and cookbook that targets the causes of migraines. Relief is possible―and it tastes great.</p>
+  <div><a class="button" href="https://www.amazon.com/dp/164152961X/ref=cm_sw_em_r_mt_dp_U_3DWYDbP57JYD4" target="_blank">Order on Amazon</a></div>
+</div>
+</div>
+  <div class="podcast-image"><a href="https://www.findinggeniuspodcast.com/podcasts/the-ketogenic-diet-for-weight-loss-and-the-possibility-for-ketogenic-therapeutics-with-denise-potter/" target="_blank"><img class="thumbnail" src="assets/images/podcast.jpg" alt="Finding Genius Podcast, The Ketogenic Diet for Weight Loss and the Possibility for Ketogenic Therapeutics with Denise Potter"></a>
+</div>
+  <div class="podcast-text"><div>
+  <h2>Finding Genius Podcast Interview</h2>
+  <p>Hear Denise's interview on the FINDING GENIUS PODCAST: <em>The Ketogenic Diet for Weight Loss and the Possibility for Ketogenic Therapeutics with Denise Potter.</em></p>
+  <div><a class="button" href="https://www.findinggeniuspodcast.com/podcasts/the-ketogenic-diet-for-weight-loss-and-the-possibility-for-ketogenic-therapeutics-with-denise-potter/" target="_blank">Listen Now</a></div>
+</div>
+</div>
+  <div class="mastery-image"><a href="https://www.ketomastery.pro/"><img src="assets/images/ketogenic_therapeutics_mastery.png"></a>
+</div>
+  <div class="mastery-text"><div>
+  <h2>Ketogenic Therapeutics Mastery Courses<br>for Ketogenic Practitioners</h2>
+  <p>Ketogenic Metabolic therapy can be a confusing, overwhelming topic. Denise Potter and Beth Zupec-Kania have designed a series of courses to assist you in becoming a competent ketogenic practitioner.</p>
+  <div><a class="button" href="https://www.ketomastery.pro/" target="_blank">Enroll Now</a></div>
+</div>
 </div>
 </div>
 
-  <script src="assets/js/nav.js"></script>
+  <script src="http://localhost:4000/assets/js/nav.js"></script>
 </body>
 </html>
