@@ -12,4 +12,8 @@
 <url>
 <loc>http://localhost:4000/team/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/_pages/schedule_one_hour.html</loc>
+<lastmod>2022-08-28T10:46:59-04:00</lastmod>
+</url>
 </urlset>

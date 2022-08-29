@@ -4,13 +4,20 @@ layout: default
 permalink: /
 ---
 <div class="hero">
-  <div class="title-container">
+  <div class="title-container center">
     <h1>Professional Ketogenic Diet<br>Training and Coaching</h1>
-    <a href="/services">See Our Available Services</a>
+    <a class="button" href="/services">See Our Available Services</a>
   </div>
 </div>
-<div class="home-grid-container">
-  <div class="title-block">{% include title_block.html %}</div>
-  <div class="see-services">{% include see_services.html %}</div>
-  <div class="book"><img src="assets/images/migraine-book.png" alt="">{% include book_text.html %}</div>
+<div class="problem-solution-grid">
+  <div class="problem">{% include problem_statement.html %}</div>
+  <div class="solution">{% include solution_statement.html %}</div>
+</div>
+<div class="resources-grid">
+  <div class="book-image">{% include book_image.html %}</div>
+  <div class="book-text">{% include book_text.html %}</div>
+  <div class="podcast-image">{% include podcast_image.html %}</div>
+  <div class="podcast-text">{% include podcast_text.html %}</div>
+  <div class="mastery-image">{% include mastery_image.html %}</div>
+  <div class="mastery-text">{% include mastery_text.html %}</div>
 </div>

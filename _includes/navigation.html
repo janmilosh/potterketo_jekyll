@@ -1,14 +1,21 @@
-<nav class="topnav" id="myTopnav">
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}"
-    {% if page.url == item.link %}
-      class="current"
-    {% endif %}>
-      {{ item.name }}
-    </a>
-  {% endfor %}
-  <a target="_blank" class="patient-portal" href="https://secure.gethealthie.com/users/sign_in">Patient Portal</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+<nav>
+  <ul id="menu" class="menu">
+    <li class="logo"><a href="/">Potter Dietitian Consulting</a></li>
+    {% for item in site.data.navigation %}
+      <li class="item">
+        <a href="{{ item.link }}"
+        {% if page.url == item.link %}
+          class="current"
+        {% endif %}>
+          {{ item.name }}
+        </a>
+      </li>
+    {% endfor %}
+    <li class="item">
+      <a target="_blank" class="patient-portal" href="https://secure.gethealthie.com/users/sign_in">Patient Portal</a>
+    </li>
+    <li id="toggle" class="toggle"><a href="#"><i id="icon" class="fas fa-bars"></i></a></li>
+  </ul>
 </nav>
+
+<!-- https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535 -->
