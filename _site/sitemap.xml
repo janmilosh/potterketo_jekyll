@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/blog.html</loc>
+<loc>/potterketo_jekyll/blog.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>/potterketo_jekyll/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/services/</loc>
+<loc>/potterketo_jekyll/schedule_one_hour/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/team/</loc>
+<loc>/potterketo_jekyll/services/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/_pages/schedule_one_hour.html</loc>
-<lastmod>2022-08-28T21:14:24-04:00</lastmod>
+<loc>/potterketo_jekyll/team/</loc>
 </url>
 </urlset>
