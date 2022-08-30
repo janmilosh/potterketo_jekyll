@@ -4,7 +4,13 @@
 <loc>/potterketo_jekyll/blog.html</loc>
 </url>
 <url>
+<loc>/potterketo_jekyll/diet/</loc>
+</url>
+<url>
 <loc>/potterketo_jekyll/</loc>
+</url>
+<url>
+<loc>/potterketo_jekyll/research/</loc>
 </url>
 <url>
 <loc>/potterketo_jekyll/schedule_one_hour/</loc>
@@ -14,5 +20,8 @@
 </url>
 <url>
 <loc>/potterketo_jekyll/team/</loc>
+</url>
+<url>
+<loc>/potterketo_jekyll/training/</loc>
 </url>
 </urlset>
