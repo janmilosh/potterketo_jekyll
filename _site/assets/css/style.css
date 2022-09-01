@@ -171,8 +171,6 @@ nav ul { margin: 0; padding: 0; }
 
 nav a { text-decoration: none; }
 
-.item { display: none; }
-
 .item a { color: #323232; font-size: 1.1em; }
 
 .item a:hover { color: #6b994c; }
@@ -185,6 +183,6 @@ ul.menu { display: grid; grid-template-columns: 1fr repeat(7, max-content); alig
 
 .toggle { display: none; }
 
-@media screen and (max-width: 960px) { .toggle { display: block; } ul.menu { grid-template-columns: 1fr  min-content; align-items: center; grid-auto-flow: row; gap: 2px; } .logo { font-size: 1.4em; padding-bottom: 10px; grid-row: 1 / span 1; } .toggle { font-size: 20px; padding-bottom: 5px; grid-row: 1 / span 1; } .item { text-align: center; background: #e4eedd; } .item:hover { background: #bbd5a9; } .item a { color: white; display: block; padding: 12px; font-size: 1.1em; } .item a:active, .item a:visited { color: #323232; } .item a:hover { color: white; } .active .item { display: block; } ul.menu li:nth-child(3) { grid-column: 1 / span 2; grid-row: 2; } ul.menu li:nth-child(4) { grid-column: 1 / span 2; grid-row: 3; } ul.menu li:nth-child(5) { grid-column: 1 / span 2; grid-row: 4; } ul.menu li:nth-child(6) { grid-column: 1 / span 2; grid-row: 5; } ul.menu li:nth-child(7) { grid-column: 1 / span 2; grid-row: 6; } ul.menu li:nth-child(8) { grid-column: 1 / span 2; grid-row: 7; } ul.menu li:nth-child(9) { grid-column: 1 / span 2; grid-row: 8; } }
+@media screen and (max-width: 960px) { .toggle { display: block; } ul.menu { grid-template-columns: 1fr  min-content; align-items: center; grid-auto-flow: row; gap: 2px; } .logo { font-size: 1.4em; padding-bottom: 10px; grid-row: 1 / span 1; } .toggle { font-size: 20px; padding-bottom: 5px; grid-row: 1 / span 1; } .item { display: none; text-align: center; background: #e4eedd; } .item:hover { background: #bbd5a9; } .item a { color: white; display: block; padding: 12px; font-size: 1.1em; } .item a:active, .item a:visited { color: #323232; } .item a:hover { color: white; } .active .item { display: block; } ul.menu li:nth-child(3) { grid-column: 1 / span 2; grid-row: 2; } ul.menu li:nth-child(4) { grid-column: 1 / span 2; grid-row: 3; } ul.menu li:nth-child(5) { grid-column: 1 / span 2; grid-row: 4; } ul.menu li:nth-child(6) { grid-column: 1 / span 2; grid-row: 5; } ul.menu li:nth-child(7) { grid-column: 1 / span 2; grid-row: 6; } ul.menu li:nth-child(8) { grid-column: 1 / span 2; grid-row: 7; } ul.menu li:nth-child(9) { grid-column: 1 / span 2; grid-row: 8; } }
 
 /*# sourceMappingURL=style.css.map */
