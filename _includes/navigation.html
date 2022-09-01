@@ -1,6 +1,7 @@
 <nav>
   <ul id="menu" class="menu">
     <li class="logo"><a href="{{ '/' | relative_url }}">Potter Dietitian Consulting</a></li>
+    <li id="toggle" class="toggle"><a href="#"><i id="icon" class="fas fa-bars"></i></a></li>
     {% for item in site.data.navigation %}
       <li class="item">
         <a href="{{ item.link | relative_url }}"
@@ -14,8 +15,5 @@
     <li class="item">
       <a target="_blank" class="patient-portal" href="https://secure.gethealthie.com/users/sign_in">Patient Portal</a>
     </li>
-    <li id="toggle" class="toggle"><a href="#"><i id="icon" class="fas fa-bars"></i></a></li>
   </ul>
 </nav>
-
-<!-- https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535 -->
