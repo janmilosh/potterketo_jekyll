@@ -81,6 +81,7 @@ a.button {
   gap: 3vw;
   h2 {
     line-height: 1.6;
+    font-size: 1.3em;
   }
 }
 
@@ -124,10 +125,6 @@ a.button {
   border: 2px solid $lightGreyGreen;
 }
 
-.mastery-text a, .book-text a {
-  margin: 10px 0 30px;
-}
-
 @media only screen and (max-width: 600px) {
   .hero {
     height: auto;
@@ -138,14 +135,36 @@ a.button {
       margin: 0px;
       width: 100%;
       a {
-        font-size: 1em;
-        padding: 10px 20px;
+        font-size: 1.2em;
       }
       h1 {
         font-size: 1.5em;
         margin: 0px 0px 10px;
         padding: 20px 0px;
       }
+    }
+  }
+
+  .problem-solution-grid {
+    display: block;
+    padding: 2vw 4vw;
+    h2 {
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+  }
+
+  .resources-grid {
+    display: block;
+    padding-top: 12vw;
+    a {
+      font-size: 1.2em;
+    }
+    h2 {
+      font-size: 1.3em;
+    }
+    div:nth-child(2n) {
+      margin-bottom: 12vw;
     }
   }
 }
@@ -159,6 +178,12 @@ a.button {
         font-size: 2.6em;
         margin: 0px;
       }
+    }
+  }
+
+  .problem-solution-grid {
+    h2 {
+      font-size: 1.4em;
     }
   }
 
@@ -180,6 +205,16 @@ a.button {
       width: 40%;
     }
   }
+
+  .problem-solution-grid {
+    padding: 2vw 10vw;
+    gap: 4vw;
+  }
+
+  .resources-grid {
+    padding: 6vw 10vw;
+    gap: 4vw;
+  }
 }
 
 @media only screen and (min-width: 2000px) {
@@ -192,5 +227,15 @@ a.button {
         margin: 0px;
       }
     }
+  }
+
+  .problem-solution-grid {
+    padding: 2vw 14vw;
+    gap: 6vw;
+  }
+
+  .resources-grid {
+    padding: 6vw 14vw;
+    gap: 6vw;
   }
 }
