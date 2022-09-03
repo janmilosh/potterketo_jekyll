@@ -15,8 +15,9 @@
   {% seo %}
 </head>
 <body>
-  {% include navigation.html %}
+  {% include header.html %}
   {{ content }}
-  <script src="{{ '/assets/js/nav.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/app.js' | relative_url }}"></script>
+  {% include footer.html %}
 </body>
 </html>
