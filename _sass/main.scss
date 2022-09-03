@@ -3,9 +3,12 @@
 }
 
 $green: rgb(107, 153, 76);
+$darkGreen: rgb(56, 66, 48);
 $darkGrey: rgb(50, 50, 50);
 $darkRed: rgb(46, 5, 13);
 $lightGreyGreen: rgb(204, 214, 197);
+$plum: rgb(73, 65, 82);
+$offWhite: rgb(220, 220, 220);
 
 body {
   margin: 0;
@@ -86,6 +89,9 @@ a.button {
 }
 
 .resources-grid {
+  h2 {
+    margin-top: 0;
+  }
   display: grid;
   justify-content: center;
   align-items: center;
@@ -156,7 +162,7 @@ a.button {
 
   .resources-grid {
     display: block;
-    padding-top: 12vw;
+    padding-bottom: 0;
     a {
       font-size: 1.2em;
     }
@@ -164,7 +170,8 @@ a.button {
       font-size: 1.3em;
     }
     div:nth-child(2n) {
-      margin-bottom: 12vw;
+      margin-bottom: 10vw;
+      margin-top: 10px;
     }
   }
 }
