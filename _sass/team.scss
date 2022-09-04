@@ -1,0 +1,22 @@
+.team-grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 50px;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .team-grid {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

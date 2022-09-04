@@ -18,6 +18,10 @@ body {
   color: $darkGrey;
 }
 
+.container {
+  margin: 0 4vw;
+}
+
 .center {
   text-align: center;
 }
@@ -162,7 +166,7 @@ a.button {
 
   .resources-grid {
     display: block;
-    padding-bottom: 0;
+    padding: 8vw 4vw 0;
     a {
       font-size: 1.2em;
     }
@@ -177,6 +181,10 @@ a.button {
 }
 
 @media only screen and (min-width: 1000px) {
+  .container {
+    margin: 0 8vw;
+  }
+  
   .hero {
     .title-container {
       margin: 0px 5%;
@@ -206,6 +214,10 @@ a.button {
 }
 
 @media only screen and (min-width: 1600px) {
+  .container {
+    margin: 0 10vw;
+  }
+  
   .hero {
     .title-container {
       margin: 0px 15%;
@@ -225,6 +237,10 @@ a.button {
 }
 
 @media only screen and (min-width: 2000px) {
+  .container {
+    margin: 0 14vw;
+  }
+  
   .hero {
     .title-container {
       margin: 20px 15%;
