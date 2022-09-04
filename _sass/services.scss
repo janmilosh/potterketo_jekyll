@@ -1,0 +1,23 @@
+.services-grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 50px;
+
+  .service {
+    background: $lightGreyGreen;
+    padding: 0 25px 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .services-grid {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

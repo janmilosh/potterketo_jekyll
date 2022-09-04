@@ -2,4 +2,46 @@
 layout: default
 title: Services
 ---
-<h1>Services</h1>
+<div class="container">
+  <h1>Available Services</h1>
+  <p>Services are available through remote, web-conference calls. ZOOM will be used unless otherwise arranged.</p>
+  <div class="services-grid">
+    <div class="service">
+      <h2>Jump-Start Assessment Call</h2>
+      {% include jump_start_body.html %}
+    </div>
+    <div class="service">
+      <h2>Keto Starter/Rebuilder Program</h2>
+      <p>A ten-call program recommended for anyone new to keto, and those who need a ketogenic diet overhaul.</p>
+      <a href="{{ '/starter_rebuilder' | relative_url }}" class="button">Learn more</a>
+    </div>
+    <div class="service">
+      <h2>Five-Call Keto Enhancement Package</h2>
+      <p>A five-call package for those who are already on a keto diet and would like professional support.</p>
+      <a href="{{ '/five_call' | relative_url }}" class="button">Learn more</a>
+    </div>
+    <div class="service">
+      <h2>One Hour Ketogenic Diet Consultation</h2>
+      <p>One-hour call, investment: $200 USD</p>
+      <a href="{{ '/schedule_one_hour_consultation' | relative_url }}" class="button">Schedule</a>
+    </div>
+    <div class="service">
+      <h2>Keto Maintenance and Monitoring</h2>
+      <p>Monthly or quarterly maintenance and monitoring for graduates of Starter/Rebuilder, Enhancement, and Concierge programs.</p>
+      <a href="{{ '/monitoring' | relative_url }}" class="button">Learn more</a>
+    </div>
+    <div class="service">
+      <h2>Premium Concierge Package</h2>
+      <p>Includes all benefits of the Keto Starter/Rebuilder program PLUS:</p>
+      <ul>
+        <li>Concierge service</li>
+        <li>Night and weekend appointments</li>
+        <li>Three additional 45-minute appointments</li>
+        <li>Increased accountability and availability to assist you on your journey</li>
+        <li>Direct texting to dietitian (with restrictions)</li>
+        <li>Premium meal planning</li>
+      </ul>
+      <a href="{{ '/premium_concierge_package' | relative_url }}" class="button">Learn more</a>
+    </div>
+  </div>
+</div>
