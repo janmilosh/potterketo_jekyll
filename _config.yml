@@ -8,6 +8,7 @@ include:
 exclude:
   - .cpanel.yml
   - deploy
+  - README.md
 
 defaults:
   - scope:
