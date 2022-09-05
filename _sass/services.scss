@@ -4,7 +4,7 @@
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 50px;
   .service {
-    background: $lightGreyGreen;
+    border: 1px solid lightgrey;
     padding: 1px 25px 25px;
   }
 }
