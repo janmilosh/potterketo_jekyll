@@ -43,6 +43,10 @@ img {
   text-align: center;
 }
 
+span.nobreak {
+  white-space: nowrap;
+}
+
 a {
   color: $darkGrey;
   &:hover {
@@ -156,6 +160,10 @@ a.button {
   border: 2px solid $lightGreyGreen;
 }
 
+.mastery-text {
+  grid-area: mastery-text;
+}
+
 @media only screen and (max-width: 600px) {
   .hero {
     height: auto;
@@ -224,7 +232,7 @@ a.button {
   }
 
   .resources-grid {
-    padding: 6vw 8vw;
+    padding: 6vw 8vw 4vw;
     gap: 6vw 4vw;
   }
 
@@ -252,7 +260,7 @@ a.button {
   }
 
   .resources-grid {
-    padding: 6vw 10vw;
+    padding: 6vw 10vw 4vw;
     gap: 4vw;
   }
 }
