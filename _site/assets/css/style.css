@@ -123,6 +123,8 @@ img { width: 100%; }
 
 .center { text-align: center; }
 
+span.nobreak { white-space: nowrap; }
+
 a { color: #323232; }
 
 a:hover { text-decoration: none; }
@@ -167,11 +169,13 @@ a.button:active, a.button:visited { color: white; }
 
 .mastery-image img { border: 2px solid #ccd6c5; }
 
+.mastery-text { grid-area: mastery-text; }
+
 @media only screen and (max-width: 600px) { .hero { height: auto; background-image: none; height: inherit; margin-bottom: 30px; } .hero .title-container { margin: 0px; width: 100%; } .hero .title-container a { font-size: 1.2em; } .hero .title-container h1 { font-size: 1.5em; margin: 0px 0px 10px; padding: 20px 0px; } .problem-solution-grid { display: block; padding: 2vw 4vw; } .problem-solution-grid h2 { font-size: 1.3em; line-height: 1.6; } .resources-grid { display: block; padding: 8vw 4vw 0; } .resources-grid a { font-size: 1.2em; } .resources-grid h2 { font-size: 1.3em; } .resources-grid div:nth-child(2n) { margin-bottom: 10vw; margin-top: 10px; } }
 
-@media only screen and (min-width: 1000px) { .container { margin: 0 8vw; } .hero .title-container { margin: 0px 5%; width: 60%; } .hero .title-container h1 { font-size: 2.6em; margin: 0px; } .problem-solution-grid h2 { font-size: 1.4em; } .resources-grid { padding: 6vw 8vw; gap: 6vw 4vw; } .mastery-image img { background: #ccd6c5; padding: 2vw 6vw; } }
+@media only screen and (min-width: 1000px) { .container { margin: 0 8vw; } .hero .title-container { margin: 0px 5%; width: 60%; } .hero .title-container h1 { font-size: 2.6em; margin: 0px; } .problem-solution-grid h2 { font-size: 1.4em; } .resources-grid { padding: 6vw 8vw 4vw; gap: 6vw 4vw; } .mastery-image img { background: #ccd6c5; padding: 2vw 6vw; } }
 
-@media only screen and (min-width: 1600px) { .container { margin: 0 10vw; } .hero .title-container { margin: 0px 15%; width: 40%; } .problem-solution-grid { padding: 2vw 10vw; gap: 4vw; } .resources-grid { padding: 6vw 10vw; gap: 4vw; } }
+@media only screen and (min-width: 1600px) { .container { margin: 0 10vw; } .hero .title-container { margin: 0px 15%; width: 40%; } .problem-solution-grid { padding: 2vw 10vw; gap: 4vw; } .resources-grid { padding: 6vw 10vw 4vw; gap: 4vw; } }
 
 @media only screen and (min-width: 2000px) { .container { margin: 0 14vw; } .hero .title-container { margin: 20px 15%; width: 40%; } .hero .title-container h1 { font-size: 3em; margin: 0px; } .problem-solution-grid { padding: 2vw 14vw; gap: 6vw; } .resources-grid { padding: 6vw 14vw; gap: 6vw; } }
 
@@ -190,6 +194,30 @@ a.button:active, a.button:visited { color: white; }
 @media only screen and (max-width: 600px) { .services-grid { display: block; } .services-grid .service { margin-bottom: 25px; } }
 
 @media only screen and (min-width: 1000px) { .services-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.testimonial-grid { display: grid; width: 1270px; margin: 30px auto 50px; gap: 2vw; grid-template-columns: repeat(8, 1fr); grid-template-areas: "t1 t1 t1 .. t7 t7 t7 t7" "t1 t1 t1 .. t7 t7 t7 t7" "t2 t2 t6 t6 t6 t6 t3 t3" "t2 t2 t6 t6 t6 t6 t3 t3" "t2 t2 t4 t4 .. .. t3 t3" "t2 t2 t4 t4 t5 t5 t5 .." ".. .. t4 t4 t5 t5 t5 .."; }
+
+.testimonial-grid p { padding: 20px; margin: 0; }
+
+.t1 { grid-area: t1; background: #e6ebe3; }
+
+.t2 { grid-area: t2; background: #ccd6c5; }
+
+.t3 { grid-area: t3; background: #e6ebe3; }
+
+.t4 { grid-area: t4; background: #e6ebe3; }
+
+.t5 { grid-area: t5; background: #ccd6c5; }
+
+.t6 { grid-area: t6; background: #bac7b0; }
+
+.t7 { grid-area: t7; background: #ccd6c5; }
+
+@media only screen and (min-width: 960px) { .testimonial-grid { width: 950px; margin: 30px auto 50px; gap: 2vw; grid-template-columns: repeat(6, 1fr); grid-template-areas: "t6 t6 t6 t6 t6 t6" "t1 t1 t1 t1 .. .." "t1 t1 t1 t1 t5 t5" "t2 t2 t2 t2 t5 t5" "t2 t2 t2 t2 t5 t5" ".. .. t7 t7 .. .." "t4 t4 t7 t7 t3 t3" "t4 t4 t7 t7 t3 t3" "t4 t4 t7 t7 t3 t3" ".. .. t7 t7 .. .."; } }
+
+@media only screen and (min-width: 1279px) { .testimonial-grid { width: 1270px; margin: 30px auto 50px; gap: 2vw; grid-template-columns: repeat(8, 1fr); grid-template-areas: "t1 t1 t1 .. t7 t7 t7 t7" "t1 t1 t1 .. t7 t7 t7 t7" "t2 t2 t6 t6 t6 t6 t3 t3" "t2 t2 t6 t6 t6 t6 t3 t3" "t2 t2 t4 t4 .. .. t3 t3" "t2 t2 t4 t4 t5 t5 t5 .." ".. .. t4 t4 t5 t5 t5 .."; } }
+
+@media only screen and (max-width: 959px) { .testimonial-grid { display: block; width: 100%; } .testimonial-grid p { padding: 20px; margin: 20px 0; } }
 
 header nav { padding: 15px; }
 
