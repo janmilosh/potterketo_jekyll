@@ -1,1 +1,1 @@
-Sitemap: /potterketo_jekyll/sitemap.xml
+Sitemap: /sitemap.xml

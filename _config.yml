@@ -5,6 +5,10 @@ plugins:
 include:
   - _pages
 
+exclude:
+  - .cpanel.yml
+  - deploy
+
 defaults:
   - scope:
       path: "_pages"
