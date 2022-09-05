@@ -125,6 +125,8 @@ img { width: 100%; }
 
 span.nobreak { white-space: nowrap; }
 
+.add-margin { margin-bottom: 30px; }
+
 a { color: #323232; }
 
 a:hover { text-decoration: none; }
@@ -189,7 +191,7 @@ a.button:active, a.button:visited { color: white; }
 
 .services-grid { display: grid; gap: 50px; grid-template-columns: repeat(2, 1fr); margin-bottom: 50px; }
 
-.services-grid .service { border: 1px solid lightgrey; padding: 1px 25px 25px; }
+.services-grid .service { border: 1px solid darkgrey; padding: 1px 25px 25px; }
 
 @media only screen and (max-width: 600px) { .services-grid { display: block; } .services-grid .service { margin-bottom: 25px; } }
 
