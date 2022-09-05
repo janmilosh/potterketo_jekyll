@@ -1,17 +1,6 @@
 .testimonial-grid {
   display: grid;
-  width: 1270px;
-  margin: 30px auto 50px;
-  gap: 2vw;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-areas:
-    "t1 t1 t1 .. t7 t7 t7 t7"
-    "t1 t1 t1 .. t7 t7 t7 t7"
-    "t2 t2 t6 t6 t6 t6 t3 t3"
-    "t2 t2 t6 t6 t6 t6 t3 t3"
-    "t2 t2 t4 t4 .. .. t3 t3"
-    "t2 t2 t4 t4 t5 t5 t5 .."
-    ".. .. t4 t4 t5 t5 t5 ..";
+  align-items: center;
   p {
     padding: 20px;
     margin: 0;
@@ -61,15 +50,14 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
       "t6 t6 t6 t6 t6 t6"
-      "t1 t1 t1 t1 .. .."
+      "t1 t1 t1 t1 t5 t5"
       "t1 t1 t1 t1 t5 t5"
       "t2 t2 t2 t2 t5 t5"
       "t2 t2 t2 t2 t5 t5"
-      ".. .. t7 t7 .. .."
-      "t4 t4 t7 t7 t3 t3"
-      "t4 t4 t7 t7 t3 t3"
-      "t4 t4 t7 t7 t3 t3"
-      ".. .. t7 t7 .. ..";
+      "t4 t4 t3 t3 t3 t3"
+      "t4 t4 t3 t3 t3 t3"
+      "t4 t4 t7 t7 t7 t7"
+      "t4 t4 t7 t7 t7 t7";
   }
 }
 

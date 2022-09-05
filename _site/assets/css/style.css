@@ -195,7 +195,7 @@ a.button:active, a.button:visited { color: white; }
 
 @media only screen and (min-width: 1000px) { .services-grid { grid-template-columns: repeat(3, 1fr); } }
 
-.testimonial-grid { display: grid; width: 1270px; margin: 30px auto 50px; gap: 2vw; grid-template-columns: repeat(8, 1fr); grid-template-areas: "t1 t1 t1 .. t7 t7 t7 t7" "t1 t1 t1 .. t7 t7 t7 t7" "t2 t2 t6 t6 t6 t6 t3 t3" "t2 t2 t6 t6 t6 t6 t3 t3" "t2 t2 t4 t4 .. .. t3 t3" "t2 t2 t4 t4 t5 t5 t5 .." ".. .. t4 t4 t5 t5 t5 .."; }
+.testimonial-grid { display: grid; align-items: center; }
 
 .testimonial-grid p { padding: 20px; margin: 0; }
 
@@ -213,7 +213,7 @@ a.button:active, a.button:visited { color: white; }
 
 .t7 { grid-area: t7; background: #ccd6c5; }
 
-@media only screen and (min-width: 960px) { .testimonial-grid { width: 950px; margin: 30px auto 50px; gap: 2vw; grid-template-columns: repeat(6, 1fr); grid-template-areas: "t6 t6 t6 t6 t6 t6" "t1 t1 t1 t1 .. .." "t1 t1 t1 t1 t5 t5" "t2 t2 t2 t2 t5 t5" "t2 t2 t2 t2 t5 t5" ".. .. t7 t7 .. .." "t4 t4 t7 t7 t3 t3" "t4 t4 t7 t7 t3 t3" "t4 t4 t7 t7 t3 t3" ".. .. t7 t7 .. .."; } }
+@media only screen and (min-width: 960px) { .testimonial-grid { width: 950px; margin: 30px auto 50px; gap: 2vw; grid-template-columns: repeat(6, 1fr); grid-template-areas: "t6 t6 t6 t6 t6 t6" "t1 t1 t1 t1 t5 t5" "t1 t1 t1 t1 t5 t5" "t2 t2 t2 t2 t5 t5" "t2 t2 t2 t2 t5 t5" "t4 t4 t3 t3 t3 t3" "t4 t4 t3 t3 t3 t3" "t4 t4 t7 t7 t7 t7" "t4 t4 t7 t7 t7 t7"; } }
 
 @media only screen and (min-width: 1279px) { .testimonial-grid { width: 1270px; margin: 30px auto 50px; gap: 2vw; grid-template-columns: repeat(8, 1fr); grid-template-areas: "t1 t1 t1 .. t7 t7 t7 t7" "t1 t1 t1 .. t7 t7 t7 t7" "t2 t2 t6 t6 t6 t6 t3 t3" "t2 t2 t6 t6 t6 t6 t3 t3" "t2 t2 t4 t4 .. .. t3 t3" "t2 t2 t4 t4 t5 t5 t5 .." ".. .. t4 t4 t5 t5 t5 .."; } }
 
