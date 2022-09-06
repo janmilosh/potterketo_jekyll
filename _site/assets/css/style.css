@@ -189,7 +189,7 @@ a.button:active, a.button:visited { color: white; }
 
 @media only screen and (min-width: 1000px) { .team-grid { grid-template-columns: repeat(3, 1fr); } }
 
-.services-container { width: 1300px; margin: 50px auto; }
+.services-container { width: 1300px; margin: 0 auto; }
 
 .services-grid { display: grid; gap: 50px; margin: 50px 0; grid-template-columns: repeat(auto-fill, 400px); grid-auto-flow: dense; }
 
