@@ -74,9 +74,6 @@
 @media only screen and (min-width: 960px) {
   .testimonial-grid {
     width: 950px;
-    // padding: 0 0 5vw;
-    // margin: 0 auto;
-    // gap: 2vw;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
       "t6 t6 t6 t6 t6 t6"

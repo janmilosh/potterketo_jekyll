@@ -1,6 +1,6 @@
 # Potterketo Website
 
-Built with [Jekyll](http://jekyllrb.com/).
+Built with [Jekyll](http://jekyllrb.com/) using Ruby 3.1.2.
 
 Build for production: `"bundle exec jekyll build --baseurl=''"`<br>
 Build for gh-pages: `"bundle exec jekyll build  --baseurl='potterketo_jekyll'"`<br>
