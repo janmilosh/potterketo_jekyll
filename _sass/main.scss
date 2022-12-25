@@ -2,12 +2,12 @@
   box-sizing: border-box;
 }
 
-$green: rgb(107, 153, 76);
-$darkGreen: rgb(56, 66, 48);
+$button: rgb(17, 86, 148);
 $darkGrey: rgb(50, 50, 50);
-$darkRed: rgb(46, 5, 13);
-$lightGreyGreen: rgb(204, 214, 197);
-$plum: rgb(73, 65, 82);
+$titleText: rgb(49, 55, 91);
+$lightBackground: rgb(139, 168, 197);
+$lightBackground2: rgb(151, 139, 129);
+$footerBackground: darken($lightBackground2, 10%);
 $offWhite: rgb(220, 220, 220);
 
 body {
@@ -70,10 +70,12 @@ ul li {
 h1 {
   font-size: 1.8em;
   margin-bottom: 1em;
+  color: $titleText;
 }
 
 h2 {
   font-size: 1.4em;
+  color: $titleText;
 }
 
 p, h1, h2 {
@@ -83,14 +85,14 @@ p, h1, h2 {
 a.button {
   display:inline-block;
   text-align: center;
-  background: $green;
+  background: $button;
   color: white;
   text-decoration: none;
   font-size: 1.3em;
   padding: 13px 20px;
   white-space: nowrap;
   &:hover {
-    background: darken($green, 5%);
+    background: darken($button, 5%);
   }
   &:active, &:visited {
     color: white;
@@ -98,33 +100,60 @@ a.button {
 }
 
 .hero {
-  background: url("../images/avocado_background_cropped.jpg") no-repeat top center;
-  background-size: cover;
-  height: 75vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 2vw 4vw 6vw;
+  gap: 3vw;
 }
 
 .title-container {
-  margin: 0px 30px;
-  width: 67%;
   h1 {
     font-size: 1.9em;
     line-height: 1.3;
     margin: 0px;
-    color: $green;
-    padding: 7vh 0px 4vh;
+    color: $titleText;
+    padding: 0px 0px 4vh;
   }
 }
 
+/* Responsive video */
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.video-wrapper {
+	box-shadow: 0 0 8px rgba(0,0,0,0.6);
+	width: 1000px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .problem-solution-grid {
-  background: $lightGreyGreen;
+  background: $lightBackground;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "problem solution";
   padding: 2vw 4vw;
   gap: 3vw;
   h2 {
     line-height: 1.6;
     font-size: 1.3em;
+    color: $darkGrey;
   }
 }
 
@@ -162,7 +191,7 @@ a.button {
 }
 
 .mastery-image img {
-  border: 2px solid $lightGreyGreen;
+  border: 2px solid $lightBackground2;
 }
 
 .mastery-text {
@@ -171,10 +200,8 @@ a.button {
 
 @media only screen and (max-width: 600px) {
   .hero {
-    height: auto;
-    background-image: none;
-    height: inherit;
-    margin-bottom: 30px;
+    display: block;
+    padding: 4vw;
     .title-container {
       margin: 0px;
       width: 100%;
@@ -186,6 +213,9 @@ a.button {
         margin: 0px 0px 10px;
         padding: 20px 0px;
       }
+    }
+    .button {
+      margin-bottom: 50px;
     }
   }
 
@@ -221,8 +251,6 @@ a.button {
   
   .hero {
     .title-container {
-      margin: 0px 5%;
-      width: 60%;
       h1 {
         font-size: 2.6em;
         margin: 0px;
@@ -242,7 +270,7 @@ a.button {
   }
 
   .mastery-image img {
-    background: $lightGreyGreen;
+    background: $lightBackground2;
     padding: 2vw 6vw;
   }
 }
@@ -250,13 +278,6 @@ a.button {
 @media only screen and (min-width: 1600px) {
   .container {
     margin: 0 10vw;
-  }
-  
-  .hero {
-    .title-container {
-      margin: 0px 15%;
-      width: 40%;
-    }
   }
 
   .problem-solution-grid {
@@ -276,13 +297,9 @@ a.button {
   }
   
   .hero {
-    .title-container {
-      margin: 20px 15%;
-      width: 40%;
-      h1 {
+    .title-container h1 {
         font-size: 3em;
         margin: 0px;
-      }
     }
   }
 

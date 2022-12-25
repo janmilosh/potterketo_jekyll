@@ -5,7 +5,7 @@
 }
 
 footer  {
-  background: $plum;
+  background: $footerBackground;
   padding: 6vw 4vw;
   color: white;
   a {
@@ -21,8 +21,12 @@ footer  {
 
   h2 {
     font-size: 1.3em;
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0;
+    color: white;
+  }
+
+  p {
+    margin: 5px 0 30px;
   }
 
   a.contact {

@@ -9,42 +9,42 @@
 
 .t1 {
   grid-area: t1;
-  background: lighten($lightGreyGreen, 10%);
+  background: lighten($lightBackground, 10%);
 }
 
 .t2 {
   grid-area: t2;
-  background: $lightGreyGreen;
+  background: $lightBackground;
 }
 
 .t3 {
   grid-area: t3;
-  background: lighten($lightGreyGreen, 10%);
+  background: lighten($lightBackground, 10%);
 }
 
 .t4 {
   grid-area: t4;
-  background: lighten($lightGreyGreen, 10%);
+  background: lighten($lightBackground, 10%);
 }
 
 .t5 {
   grid-area: t5;
-  background: $lightGreyGreen;
+  background: $lightBackground;
 }
 
 .t6 {
   grid-area: t6;
-  background: darken($lightGreyGreen, 7%);
+  background: darken($lightBackground, 7%);
 }
 
 .t7 {
   grid-area: t7;
-  background: $lightGreyGreen;
+  background: $lightBackground;
 }
 
 .fa-quote-left {
   font-size: 2em;
-  color: darken($lightGreyGreen, 20%);
+  color: darken($lightBackground, 20%);
 }
 
 @media only screen and (min-width: 601px) {

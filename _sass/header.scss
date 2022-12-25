@@ -14,11 +14,12 @@ header {
   }
 
   .item {
+    padding-bottom: 10px;
     a {
       color: $darkGrey;
       font-size: 1.1em;
       &:hover {
-        color: $green;
+        text-decoration: underline;
       }
     }
   }
@@ -31,11 +32,8 @@ header {
     gap: 30px;
   }
   
-  .logo {
-    font-size: 1.5em;
-    a:hover {
-      color: $green;
-    }
+  .logo img {
+    max-width: 350px;
   }
   
   .toggle {
@@ -49,28 +47,28 @@ header {
       grid-template-columns: 1fr  min-content ;
       align-items: center;
       grid-auto-flow: row;
-      gap: 2px;
+      gap: 4px 40px;
     }
   
     .logo {
-      font-size: 1.4em;
-      padding-bottom: 10px;
+      padding-bottom: 0;
       grid-row: 1 / span 1;
     }
 
     .toggle {
       display: block;
       font-size: 20px;
-      padding-bottom: 5px;
+      padding-bottom: 15px;
       grid-row: 1 / span 1;
     }
 
     .item {
+      padding-bottom: 0;
       display: none;
       text-align: center;
-      background: lighten($green, 45%);
+      background: lighten($lightBackground, 10%);
       &:hover {
-        background: lighten($green, 30%)
+        background: $lightBackground;
       }
       a {
         display: block;
@@ -78,6 +76,7 @@ header {
         font-size: 1.1em;
         &:hover {
           color: white;
+          text-decoration: none;
         }
       }
     }
