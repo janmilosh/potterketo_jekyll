@@ -167,9 +167,10 @@ a.button {
   grid-auto-columns: 1fr;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-    "book-image book-text"
-     "podcast-text podcast-image"
-     "mastery-image mastery-text";
+    "award-image award-text"
+    "book-text book-image"
+    "podcast-image podcast-text"
+    "mastery-text mastery-image";
   padding: 6vw 4vw;
   gap: 6vw 4vw;
 }
