@@ -162,7 +162,7 @@ a.button:active, a.button:visited { color: white; }
 
 .problem-solution-grid h2 { line-height: 1.6; font-size: 1.3em; color: #323232; }
 
-.resources-grid { display: grid; justify-content: center; align-items: center; grid-auto-columns: 1fr; grid-template-columns: repeat(2, 1fr); grid-template-areas: "book-image book-text" "podcast-text podcast-image" "mastery-image mastery-text"; padding: 6vw 4vw; gap: 6vw 4vw; }
+.resources-grid { display: grid; justify-content: center; align-items: center; grid-auto-columns: 1fr; grid-template-columns: repeat(2, 1fr); grid-template-areas: "award-image award-text" "book-text book-image" "podcast-image podcast-text" "mastery-text mastery-image"; padding: 6vw 4vw; gap: 6vw 4vw; }
 
 .resources-grid h2 { margin-top: 0; }
 
