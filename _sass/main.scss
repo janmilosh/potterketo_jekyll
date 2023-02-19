@@ -9,6 +9,8 @@ $lightBackground: rgb(139, 168, 197);
 $lightBackground2: rgb(151, 139, 129);
 $footerBackground: rgb(42, 63, 84);
 $offWhite: rgb(220, 220, 220);
+$lightOrange: rgb(240, 216, 196);
+$buttonOrange: rgb(235, 74, 41);
 
 body {
   margin: 0;
@@ -67,6 +69,10 @@ ul li {
   font-size: 1.1em;
 }
 
+h1, h2 {
+  font-weight: 500;
+}
+
 h1 {
   font-size: 1.8em;
   margin-bottom: 1em;
@@ -101,10 +107,10 @@ a.button {
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 50%);
   justify-content: center;
   align-items: center;
-  padding: 2vw 4vw 6vw;
+  padding: 2vw 4vw 5vw;
   gap: 3vw;
 }
 
@@ -115,6 +121,20 @@ a.button {
     margin: 0px;
     color: $titleText;
     padding: 0px 0px 4vh;
+  }
+}
+
+.class-wrapper {
+  padding: 20px 20px 5px;
+  background: $lightOrange;
+  .button {
+    background: $buttonOrange;
+    &:hover {
+      background: $buttonOrange;
+    }
+  }
+  span {
+    font-weight: 700;
   }
 }
 
@@ -164,13 +184,12 @@ a.button {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-auto-columns: 1fr;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 50%);
   grid-template-areas:
+    "bipolar-podcast-video podcast-image"
     "award-image award-text"
     "book-text book-image"
-    "podcast-image podcast-text"
-    "mastery-text mastery-image";
+    "mastery-image mastery-text";
   padding: 6vw 4vw;
   gap: 6vw 4vw;
 }
@@ -203,20 +222,18 @@ a.button {
   .hero {
     display: block;
     padding: 4vw;
-    .title-container {
-      margin: 0px;
-      width: 100%;
-      a {
-        font-size: 1.2em;
+    margin-bottom: 4vw;
+    a {
+        font-size: 20px;
       }
+    .title-container {
+      margin: 0px 0px 50px;
+      width: 100%;
       h1 {
         font-size: 1.5em;
         margin: 0px 0px 10px;
         padding: 20px 0px;
       }
-    }
-    .button {
-      margin-bottom: 50px;
     }
   }
 
@@ -231,15 +248,19 @@ a.button {
 
   .resources-grid {
     display: block;
-    padding: 8vw 4vw 0;
+    padding: 0 4vw 4vw;
     a {
       font-size: 1.2em;
     }
     h2 {
       font-size: 1.3em;
     }
-    div:nth-child(2n) {
-      margin-bottom: 10vw;
+
+    > div {
+      margin-top: 10vw;
+    }
+
+    .text {
       margin-top: 10px;
     }
   }

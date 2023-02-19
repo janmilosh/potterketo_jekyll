@@ -3,7 +3,6 @@
   gap: 50px;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 50px;
-
   img {
     width: 100%;
   }
@@ -12,6 +11,9 @@
 @media only screen and (max-width: 600px) {
   .team-grid {
     display: block;
+    p {
+      margin-bottom: 40px;
+    }
   }
 }
 
