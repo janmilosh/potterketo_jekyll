@@ -135,15 +135,15 @@ p { font-size: 1.1em; }
 
 ul li { line-height: 1.5; font-size: 1.1em; }
 
-h1, h2 { font-weight: 500; }
+h1, h2, h3 { font-weight: 500; color: #31375b; }
 
-h1 { font-size: 1.8em; margin-bottom: 1em; color: #31375b; }
+h1 { font-size: 1.8em; margin-bottom: 1em; }
 
-h2 { font-size: 1.4em; color: #31375b; }
+h2 { font-size: 1.4em; }
 
 p, h1, h2 { line-height: 1.4; }
 
-a.button { display: inline-block; text-align: center; background: #115694; color: white; text-decoration: none; font-size: 1.3em; padding: 13px 20px; white-space: nowrap; }
+a.button { display: inline-block; text-align: center; background: #115694; color: white; text-decoration: none; font-size: 1.3rem; padding: 12px 15px; white-space: nowrap; }
 
 a.button:hover { background: #0e497d; }
 
@@ -151,9 +151,15 @@ a.button:active, a.button:visited { color: white; }
 
 .hero { display: grid; grid-template-columns: repeat(2, 50%); justify-content: center; align-items: center; padding: 2vw 4vw 5vw; gap: 3vw; }
 
-.title-container h1 { font-size: 1.9em; line-height: 1.3; margin: 0px; color: #31375b; padding: 0px 0px 4vh; }
+.hero h2 { margin-bottom: 0.2em; }
 
-.class-wrapper { padding: 20px 20px 5px; background: #f0d8c4; }
+.hero h3 { margin-top: 0.2em; }
+
+.hero p { margin-top: 1.4em; }
+
+.title-container h1 { font-size: 1.9em; line-height: 1.3; margin: 0px; color: #31375b; padding: 0px 0px 2vh; }
+
+.class-wrapper { margin-top: 40px; padding: 10px 20px 10px; background: #f0d8c4; }
 
 .class-wrapper .button { background: #eb4a29; }
 
@@ -172,7 +178,7 @@ a.button:active, a.button:visited { color: white; }
 
 .problem-solution-grid h2 { line-height: 1.6; font-size: 1.3em; color: #323232; }
 
-.resources-grid { display: grid; justify-content: center; align-items: center; grid-template-columns: repeat(2, 50%); grid-template-areas: "bipolar-podcast-video podcast-image" "award-image award-text" "book-text book-image" "mastery-image mastery-text"; padding: 6vw 4vw; gap: 6vw 4vw; }
+.resources-grid { display: grid; justify-content: center; align-items: center; grid-template-columns: repeat(2, 50%); grid-template-areas: "mastery-image mastery-text" "bipolar-podcast-video podcast-image" "award-image award-text" "book-text book-image"; padding: 6vw 4vw; gap: 6vw 4vw; }
 
 .resources-grid h2 { margin-top: 0; }
 
@@ -188,13 +194,15 @@ a.button:active, a.button:visited { color: white; }
 
 .mastery-text { grid-area: mastery-text; }
 
-@media only screen and (max-width: 600px) { .hero { display: block; padding: 4vw; margin-bottom: 4vw; } .hero a { font-size: 20px; } .hero .title-container { margin: 0px 0px 50px; width: 100%; } .hero .title-container h1 { font-size: 1.5em; margin: 0px 0px 10px; padding: 20px 0px; } .problem-solution-grid { display: block; padding: 2vw 4vw; } .problem-solution-grid h2 { font-size: 1.3em; line-height: 1.6; } .resources-grid { display: block; padding: 0 4vw 4vw; } .resources-grid a { font-size: 1.2em; } .resources-grid h2 { font-size: 1.3em; } .resources-grid > div { margin-top: 10vw; } .resources-grid .text { margin-top: 10px; } }
+@media only screen and (max-width: 600px) { .problem-solution-grid { display: block; padding: 2vw 4vw; } .problem-solution-grid h2 { font-size: 1.3em; line-height: 1.6; } .resources-grid { display: block; padding: 0 4vw 4vw; } .resources-grid a { font-size: 1.2em; } .resources-grid h2 { font-size: 1.3em; } .resources-grid > div { margin-top: 10vw; } .resources-grid .text { margin-top: 10px; } }
+
+@media only screen and (max-width: 1200px) { .hero { display: block; padding: 0vw 4vw 4vw; margin-bottom: 4vw; } .hero a { font-size: 20px; } .hero .title-container { margin: 0px 0px 50px; width: 100%; } .hero .title-container h1 { font-size: 1.5em; margin: 0px 0px 10px; padding: 20px 0px; } }
 
 @media only screen and (min-width: 1000px) { .container { margin: 0 8vw; } .hero .title-container h1 { font-size: 2.6em; margin: 0px; } .problem-solution-grid h2 { font-size: 1.4em; } .resources-grid { padding: 6vw 8vw 4vw; gap: 6vw 4vw; } .mastery-image img { background: #978b81; padding: 2vw 6vw; } }
 
 @media only screen and (min-width: 1600px) { .container { margin: 0 10vw; } .problem-solution-grid { padding: 2vw 10vw; gap: 4vw; } .resources-grid { padding: 6vw 10vw 4vw; gap: 4vw; } }
 
-@media only screen and (min-width: 2000px) { .container { margin: 0 14vw; } .hero .title-container h1 { font-size: 3em; margin: 0px; } .problem-solution-grid { padding: 2vw 14vw; gap: 6vw; } .resources-grid { padding: 6vw 14vw; gap: 6vw; } }
+@media only screen and (min-width: 2000px) { .container { margin: 0 14vw; } .hero .title-container h1 { font-size: 3em; margin: 0px; } .class-wrapper { margin-top: 60px; } .problem-solution-grid { padding: 2vw 14vw; gap: 6vw; } .resources-grid { padding: 6vw 14vw; gap: 6vw; } }
 
 .team-grid { display: grid; gap: 50px; grid-template-columns: repeat(2, 1fr); margin-bottom: 50px; }
 
