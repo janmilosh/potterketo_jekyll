@@ -157,9 +157,11 @@ a.button:active, a.button:visited { color: white; }
 
 .hero p { margin-top: 1.4em; }
 
+.title-container { padding: 20px 20px 40px; }
+
 .title-container h1 { font-size: 1.9em; line-height: 1.3; margin: 0px; color: #31375b; padding: 0px 0px 2vh; }
 
-.class-wrapper { margin-top: 40px; padding: 10px 20px 10px; background: #f0d8c4; }
+.class-wrapper { margin: 40px 0; padding: 10px 20px 10px; background: #f0d8c4; }
 
 .class-wrapper .button { background: #eb4a29; }
 
@@ -219,6 +221,10 @@ a.button:active, a.button:visited { color: white; }
 .service { display: grid; grid-template-columns: 1fr; grid-template-rows: min-content auto 50px; border: 1px solid darkgrey; padding: 1px 25px 25px; }
 
 .service h2 { margin-bottom: 0; }
+
+.service.one-hour { grid-template-rows: auto auto min-content; }
+
+.service.one-hour .button { width: 100%; }
 
 @media only screen and (max-width: 1340px) { .services-container { max-width: 850px; } }
 

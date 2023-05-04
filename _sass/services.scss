@@ -21,6 +21,13 @@
   }
 }
 
+.service.one-hour {
+  grid-template-rows: auto auto min-content;
+  .button {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 1340px) {
   .services-container {
     max-width: 850px;
