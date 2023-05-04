@@ -88,7 +88,7 @@ p, h1, h2 {
 }
 
 a.button {
-  display:inline-block;
+  display: inline-block;
   text-align: center;
   background: $button;
   color: white;
@@ -130,10 +130,11 @@ a.button {
     color: $titleText;
     padding: 0px 0px 2vh;
   }
+  padding: 20px 20px 40px;
 }
 
 .class-wrapper {
-  margin-top: 40px;
+  margin: 40px 0;
   padding: 10px 20px 10px;
   background: $lightOrange;
   .button {
