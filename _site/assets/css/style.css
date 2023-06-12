@@ -159,7 +159,7 @@ a.button:active, a.button:visited { color: white; }
 
 .title-container { padding: 20px 20px 40px; }
 
-.title-container h1 { font-size: 1.9em; line-height: 1.3; margin: 0px; color: #31375b; padding: 0px 0px 2vh; }
+.title-container h1 { font-size: 1.9em; line-height: 1.3; margin: 0px; color: #31375b; padding: 0px 0px 4vh; }
 
 .class-wrapper { margin: 40px 0; padding: 10px 20px 30px; background: #f0d8c4; }
 
