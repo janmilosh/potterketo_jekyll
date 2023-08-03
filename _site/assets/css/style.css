@@ -149,7 +149,7 @@ a.button:hover { background: #0e497d; }
 
 a.button:active, a.button:visited { color: white; }
 
-.hero { display: grid; grid-template-columns: repeat(2, 50%); justify-content: center; align-items: center; padding: 2vw 4vw 5vw; gap: 3vw; }
+.hero { display: grid; grid-template-columns: repeat(2, 1fr); align-items: center; padding: 2vw 4vw 5vw; gap: 3vw; }
 
 .hero h2 { margin-bottom: 0.2em; }
 
@@ -180,7 +180,7 @@ a.button:active, a.button:visited { color: white; }
 
 .problem-solution-grid h2 { line-height: 1.6; font-size: 1.3em; color: #323232; }
 
-.resources-grid { display: grid; justify-content: center; align-items: center; grid-template-columns: repeat(2, 50%); grid-template-areas: "mastery-image mastery-text" "bipolar-podcast-video podcast-image" "award-image award-text" "book-text book-image"; padding: 6vw 4vw; gap: 6vw 4vw; }
+.resources-grid { display: grid; align-items: center; grid-template-columns: 1fr 1fr; grid-template-areas: "mastery-image mastery-text" "podcast-text podcast-image" "award-image award-text" "book-text book-image"; padding: 6vw 4vw; gap: 6vw 4vw; }
 
 .resources-grid h2 { margin-top: 0; }
 
@@ -196,11 +196,11 @@ a.button:active, a.button:visited { color: white; }
 
 .mastery-text { grid-area: mastery-text; }
 
-@media only screen and (max-width: 600px) { .problem-solution-grid { display: block; padding: 2vw 4vw; } .problem-solution-grid h2 { font-size: 1.3em; line-height: 1.6; } .resources-grid { display: block; padding: 0 4vw 4vw; } .resources-grid a { font-size: 1.2em; } .resources-grid h2 { font-size: 1.3em; } .resources-grid > div { margin-top: 10vw; } .resources-grid .text { margin-top: 10px; } }
+@media only screen and (max-width: 600px) { .problem-solution-grid { display: block; padding: 2vw 4vw; } .problem-solution-grid h2 { font-size: 1.3em; line-height: 1.6; } .resources-grid { display: block; padding: 0 4vw 8vw; } .resources-grid a { font-size: 1.2em; } .resources-grid h2 { font-size: 1.3em; } .resources-grid > div { margin-top: 10vw; } .resources-grid .text { margin-top: 10px; } }
 
 @media only screen and (max-width: 1200px) { .hero { display: block; padding: 0vw 4vw 4vw; margin-bottom: 4vw; } .hero a { font-size: 20px; } .hero .title-container { margin: 0px 0px 50px; width: 100%; } .hero .title-container h1 { font-size: 1.5em; margin: 0px 0px 10px; padding: 20px 0px; } }
 
-@media only screen and (min-width: 1000px) { .container { margin: 0 8vw; } .hero .title-container h1 { font-size: 2.6em; margin: 0px; } .problem-solution-grid h2 { font-size: 1.4em; } .resources-grid { padding: 6vw 8vw 4vw; gap: 6vw 4vw; } .mastery-image img { background: #978b81; padding: 2vw 6vw; } }
+@media only screen and (min-width: 1000px) { .container { margin: 0 8vw; } .hero .title-container h1 { font-size: 2.6em; margin: 0px; } .problem-solution-grid h2 { font-size: 1.4em; } .resources-grid { padding: 6vw 4vw 4vw; gap: 6vw 4vw; } }
 
 @media only screen and (min-width: 1600px) { .container { margin: 0 10vw; } .problem-solution-grid { padding: 2vw 10vw; gap: 4vw; } .resources-grid { padding: 6vw 10vw 4vw; gap: 4vw; } }
 
@@ -213,6 +213,18 @@ a.button:active, a.button:visited { color: white; }
 @media only screen and (max-width: 600px) { .team-grid { display: block; } .team-grid p { margin-bottom: 40px; } }
 
 @media only screen and (min-width: 1000px) { .team-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.video-grid { display: grid; gap: 4vw; padding: 4vw; margin-bottom: 5vw; background-color: gainsboro; grid-template-columns: repeat(2, 1fr); }
+
+.video-grid img { width: 100%; }
+
+@media only screen and (max-width: 600px) { .video-grid { grid-template-columns: 1fr; padding: 4vw; } }
+
+@media only screen and (min-width: 1000px) { .video-grid { grid-template-columns: repeat(3, 1fr); padding: 4vw; } }
+
+@media only screen and (min-width: 1600px) { .video-grid { padding: 4vw 10vw; } }
+
+@media only screen and (min-width: 2000px) { .video-grid { padding: 4vw 14vw; } }
 
 .services-container { max-width: 1300px; margin: 0 auto 50px; }
 

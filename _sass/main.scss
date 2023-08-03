@@ -106,8 +106,7 @@ a.button {
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
-  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 2vw 4vw 5vw;
   gap: 3vw;
@@ -192,12 +191,11 @@ a.button {
     margin-top: 0;
   }
   display: grid;
-  justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "mastery-image mastery-text"
-    "bipolar-podcast-video podcast-image"
+    "podcast-text podcast-image"
     "award-image award-text"
     "book-text book-image";
   padding: 6vw 4vw;
@@ -240,7 +238,7 @@ a.button {
 
   .resources-grid {
     display: block;
-    padding: 0 4vw 4vw;
+    padding: 0 4vw 8vw;
     a {
       font-size: 1.2em;
     }
@@ -299,13 +297,8 @@ a.button {
   }
 
   .resources-grid {
-    padding: 6vw 8vw 4vw;
+    padding: 6vw 4vw 4vw;
     gap: 6vw 4vw;
-  }
-
-  .mastery-image img {
-    background: $lightBackground2;
-    padding: 2vw 6vw;
   }
 }
 
