@@ -194,6 +194,7 @@ a.button {
   align-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
+    "boundless-body-text boundless-body-image"
     "mastery-image mastery-text"
     "podcast-text podcast-image"
     "award-image award-text"
@@ -218,12 +219,27 @@ a.button {
   grid-area: podcast-text;
 }
 
-.mastery-image img {
-  border: 2px solid $lightBackground2;
+.mastery-image {
+  grid-area: mastery-image;
+  img {
+    border: 2px solid $lightBackground2;
+  }
 }
 
 .mastery-text {
   grid-area: mastery-text;
+}
+
+.boundless-body-image {
+  grid-area: boundless-body-image;
+  img {
+    border: 2px solid $lightBackground2;
+    padding: 12px 15px;
+  }
+}
+
+.boundless-body-text {
+  grid-area: boundless-body-text;
 }
 
 @media only screen and (max-width: 600px) {

@@ -180,7 +180,7 @@ a.button:active, a.button:visited { color: white; }
 
 .problem-solution-grid h2 { line-height: 1.6; font-size: 1.3em; color: #323232; }
 
-.resources-grid { display: grid; align-items: center; grid-template-columns: 1fr 1fr; grid-template-areas: "mastery-image mastery-text" "podcast-text podcast-image" "award-image award-text" "book-text book-image"; padding: 6vw 4vw; gap: 6vw 4vw; }
+.resources-grid { display: grid; align-items: center; grid-template-columns: 1fr 1fr; grid-template-areas: "boundless-body-text boundless-body-image" "mastery-image mastery-text" "podcast-text podcast-image" "award-image award-text" "book-text book-image"; padding: 6vw 4vw; gap: 6vw 4vw; }
 
 .resources-grid h2 { margin-top: 0; }
 
@@ -192,9 +192,17 @@ a.button:active, a.button:visited { color: white; }
 
 .podcast-text { grid-area: podcast-text; }
 
+.mastery-image { grid-area: mastery-image; }
+
 .mastery-image img { border: 2px solid #978b81; }
 
 .mastery-text { grid-area: mastery-text; }
+
+.boundless-body-image { grid-area: boundless-body-image; }
+
+.boundless-body-image img { border: 2px solid #978b81; padding: 12px 15px; }
+
+.boundless-body-text { grid-area: boundless-body-text; }
 
 @media only screen and (max-width: 600px) { .problem-solution-grid { display: block; padding: 2vw 4vw; } .problem-solution-grid h2 { font-size: 1.3em; line-height: 1.6; } .resources-grid { display: block; padding: 0 4vw 8vw; } .resources-grid a { font-size: 1.2em; } .resources-grid h2 { font-size: 1.3em; } .resources-grid > div { margin-top: 10vw; } .resources-grid .text { margin-top: 10px; } }
 
