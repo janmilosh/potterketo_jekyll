@@ -177,6 +177,25 @@ a.button {
 	margin-right: auto;
 }
 
+.announcement {
+  padding: 2vw 4vw;
+  background: $button;
+  text-align: center;
+  span {
+    white-space: nowrap;
+  }
+  p {
+    color: white;
+    font-size: 1.3em;
+  }
+  a {
+    color: white;
+    &:active, &:visited, &:hover {
+      color: white;
+    }
+  }
+}
+
 .problem-solution-grid {
   background: $lightBackground;
   display: grid;
@@ -247,6 +266,10 @@ a.button {
 }
 
 @media only screen and (max-width: 600px) {
+  .announcement {
+    padding: 2vw 4vw;
+  }
+
   .problem-solution-grid {
     display: block;
     padding: 2vw 4vw;
@@ -325,6 +348,10 @@ a.button {
 @media only screen and (min-width: 1600px) {
   .container {
     margin: 0 10vw;
+  }
+
+  .announcement {
+    padding: 2vw 10vw;
   }
 
   .problem-solution-grid {
