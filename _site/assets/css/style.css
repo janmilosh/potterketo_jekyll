@@ -155,7 +155,9 @@ a.button:active, a.button:visited { color: white; }
 
 .hero h3 { margin-top: 0.2em; }
 
-.hero p { margin-top: 1.4em; }
+.hero a.button { width: 16em; margin-bottom: 1.4em; }
+
+.hero p { margin-top: 0em; }
 
 .title-container { padding: 20px 20px 40px; }
 
