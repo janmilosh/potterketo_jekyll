@@ -178,6 +178,16 @@ a.button:active, a.button:visited { color: white; }
 
 .video-wrapper { box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); width: 1000px; max-width: 100%; margin-left: auto; margin-right: auto; }
 
+.announcement { padding: 2vw 4vw; background: #115694; text-align: center; }
+
+.announcement span { white-space: nowrap; }
+
+.announcement p { color: white; font-size: 1.3em; }
+
+.announcement a { color: white; }
+
+.announcement a:active, .announcement a:visited, .announcement a:hover { color: white; }
+
 .problem-solution-grid { background: #8ba8c5; display: grid; grid-template-columns: repeat(2, 1fr); padding: 2vw 4vw; gap: 3vw; }
 
 .problem-solution-grid h2 { line-height: 1.6; font-size: 1.3em; color: #323232; }
@@ -206,13 +216,13 @@ a.button:active, a.button:visited { color: white; }
 
 .boundless-body-text { grid-area: boundless-body-text; }
 
-@media only screen and (max-width: 600px) { .problem-solution-grid { display: block; padding: 2vw 4vw; } .problem-solution-grid h2 { font-size: 1.3em; line-height: 1.6; } .resources-grid { display: block; padding: 0 4vw 8vw; } .resources-grid a { font-size: 1.2em; } .resources-grid h2 { font-size: 1.3em; } .resources-grid > div { margin-top: 10vw; } .resources-grid .text { margin-top: 10px; } }
+@media only screen and (max-width: 600px) { .announcement { padding: 2vw 4vw; } .problem-solution-grid { display: block; padding: 2vw 4vw; } .problem-solution-grid h2 { font-size: 1.3em; line-height: 1.6; } .resources-grid { display: block; padding: 0 4vw 8vw; } .resources-grid a { font-size: 1.2em; } .resources-grid h2 { font-size: 1.3em; } .resources-grid > div { margin-top: 10vw; } .resources-grid .text { margin-top: 10px; } }
 
 @media only screen and (max-width: 1200px) { .hero { display: block; padding: 0vw 4vw 4vw; margin-bottom: 4vw; } .hero a { font-size: 20px; } .hero .title-container { margin: 0px 0px 50px; width: 100%; } .hero .title-container h1 { font-size: 1.5em; margin: 0px 0px 10px; padding: 20px 0px; } }
 
 @media only screen and (min-width: 1000px) { .container { margin: 0 8vw; } .hero .title-container h1 { font-size: 2.6em; margin: 0px; } .problem-solution-grid h2 { font-size: 1.4em; } .resources-grid { padding: 6vw 4vw 4vw; gap: 6vw 4vw; } }
 
-@media only screen and (min-width: 1600px) { .container { margin: 0 10vw; } .problem-solution-grid { padding: 2vw 10vw; gap: 4vw; } .resources-grid { padding: 6vw 10vw 4vw; gap: 4vw; } }
+@media only screen and (min-width: 1600px) { .container { margin: 0 10vw; } .announcement { padding: 2vw 10vw; } .problem-solution-grid { padding: 2vw 10vw; gap: 4vw; } .resources-grid { padding: 6vw 10vw 4vw; gap: 4vw; } }
 
 @media only screen and (min-width: 2000px) { .container { margin: 0 14vw; } .hero .title-container h1 { font-size: 3em; margin: 0px; } .class-wrapper { margin-top: 60px; } .problem-solution-grid { padding: 2vw 14vw; gap: 6vw; } .resources-grid { padding: 6vw 14vw; gap: 6vw; } }
 
