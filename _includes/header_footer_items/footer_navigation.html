@@ -2,7 +2,7 @@
   <ul id="menu" class="menu">
     <li class="logo"><a href="{{ '/' | relative_url }}"><img src="/assets/images/logo.png" alt="Advanced Ketogenic Therapies"></a></li>
     <li id="toggle" class="toggle"><a href="#"><i id="icon" class="fas fa-bars"></i></a></li>
-    {% for item in site.data.navigation %}
+    {% for item in site.data.footer_navigation %}
       <li class="item">
         <a href="{{ item.link | relative_url }}"
         {% if page.url == item.link %}

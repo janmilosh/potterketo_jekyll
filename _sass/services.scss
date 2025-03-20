@@ -5,7 +5,7 @@
 
 .services-grid {
   display: grid;
-  gap: 50px;
+  gap: 40px;
   margin: 50px 0;
   grid-template-columns: repeat(auto-fill, 400px);
 }
@@ -13,17 +13,26 @@
 .service {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: min-content auto 50px;
-  border: 1px solid darkgrey;
-  padding: 1px 25px 25px;
+  grid-template-rows: min-content auto 51px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.075);
+  border-radius: 4px;
+  padding: 1px 25px 35px;
   h2 {
+    font-size: 1.8em;
+    font-weight: 300;
     margin-bottom: 0;
+  }
+  ul li {
+    margin-bottom: 8px;
+  }
+  p, ul {
+    margin-bottom: 25px;
   }
 }
 
 .service.one-hour {
   grid-template-rows: auto auto min-content;
-  .button {
+  .button-white {
     width: 100%;
   }
 }
