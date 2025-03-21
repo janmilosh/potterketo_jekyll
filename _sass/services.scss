@@ -1,29 +1,30 @@
-.services-container {
-  max-width: 1300px;
-  margin: 0 auto 50px;
-}
-
 .services-grid {
   display: grid;
-  gap: 50px;
-  margin: 50px 0;
+  gap: 40px;
+  margin-bottom: 50px;
   grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: center;
 }
 
 .service {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: min-content auto 50px;
-  border: 1px solid darkgrey;
-  padding: 1px 25px 25px;
+  grid-template-rows: min-content auto 51px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.075);
+  border-radius: 4px;
+  padding: 1px 25px 35px;
   h2 {
+    font-size: 1.8rem;
     margin-bottom: 0;
+  }
+  p, ul {
+    margin-bottom: 25px;
   }
 }
 
 .service.one-hour {
   grid-template-rows: auto auto min-content;
-  .button {
+  .button.white {
     width: 100%;
   }
 }
@@ -48,8 +49,5 @@
       width: 100%;
       margin-bottom: 25px;
     }
-  }
-  .services-container {
-    margin: 0 4vw 50px;
   }
 }

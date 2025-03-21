@@ -1,9 +1,10 @@
+.video-outer {
+  background: $offWhite;
+}
+
 .video-grid {
   display: grid;
-  gap: 4vw;
-  padding: 4vw;
-  margin-bottom: 5vw;
-  background-color: $offWhite;
+  gap: 40px;
   grid-template-columns: repeat(2, 1fr);
   img {
     width: 100%;
@@ -13,25 +14,11 @@
 @media only screen and (max-width: 600px) {
   .video-grid {
     grid-template-columns: 1fr;
-    padding: 4vw;
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .video-grid {
     grid-template-columns: repeat(3, 1fr);
-    padding: 4vw;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .video-grid {
-    padding: 4vw 10vw;
-  }
-}
-
-@media only screen and (min-width: 2000px) {
-  .video-grid {
-    padding: 4vw 14vw;
   }
 }

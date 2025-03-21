@@ -1,0 +1,19 @@
+<nav>
+  <ul id="menu" class="menu">
+    <li class="logo"><a href="{{ '/' | relative_url }}"><img src="/assets/images/logo.png" alt="Advanced Ketogenic Therapies"></a></li>
+    <li id="toggle" class="toggle"><a href="#"><i id="icon" class="fas fa-bars"></i></a></li>
+    {% for item in site.data.header_navigation %}
+      <li class="item">
+        <a href="{{ item.link | relative_url }}"
+        {% if page.url == item.link %}
+          class="current"
+        {% endif %}>
+          {{ item.name }}
+        </a>
+      </li>
+    {% endfor %}
+    <li class="item">
+      <a target="_blank" class="patient-portal" href="https://secure.gethealthie.com/users/sign_in">Patient Portal</a>
+    </li>
+  </ul>
+</nav>

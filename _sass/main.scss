@@ -2,13 +2,15 @@
   box-sizing: border-box;
 }
 
+$darkBlue: rgb(25,47,68);
 $button: rgb(17, 86, 148);
-$darkGrey: rgb(50, 50, 50);
+$darkGrey: rgb(70, 70, 70);
 $titleText: rgb(49, 55, 91);
 $lightBackground: rgb(139, 168, 197);
+$lightBlue: rgb(214, 225, 235);
 $lightBackground2: rgb(151, 139, 129);
 $footerBackground: rgb(42, 63, 84);
-$offWhite: rgb(220, 220, 220);
+$offWhite: rgb(240, 240, 240);
 $lightOrange: rgb(240, 216, 196);
 $buttonOrange: rgb(235, 74, 41);
 
@@ -21,15 +23,17 @@ body {
 }
 
 .container {
-  margin: 0 4vw;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
 
 .text-container {
-  padding: 0 20px;
-  margin: 0 auto 50px;
+  padding: 60px 20px;
+  margin: 0 auto;
   max-width: 900px;
   img {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 }
 
@@ -39,6 +43,7 @@ body {
 
 img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .center {
@@ -61,30 +66,30 @@ a {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 ul li {
   line-height: 1.6;
   font-size: 1.1rem;
+  margin-bottom: 8px;
 }
 
 h1, h2, h3 {
-  font-weight: 500;
+  font-weight: 300;
   color: $titleText;
 }
 
 h1 {
-  font-size: 1.8em;
-  margin-bottom: 1em;
+  font-size: 1.8rem;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 p, h1, h2 {
-  line-height: 1.4;
+  line-height: 1.6; 
 }
 
 a.button {
@@ -93,9 +98,11 @@ a.button {
   background: $button;
   color: white;
   text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   font-size: 1.3rem;
   padding: 12px 15px;
   white-space: nowrap;
+  border-radius: 5px;
   &:hover {
     background: darken($button, 5%);
   }
@@ -104,36 +111,117 @@ a.button {
   }
 }
 
+a.button.white {
+  background: white;
+  color: lighten($darkBlue, 10%);
+  border: 2px solid rgba($darkBlue, 0.5);
+  &:hover {
+    background: $offWhite;
+  }
+  &:active, &:visited {
+    color: lighten($darkBlue, 10%);
+  }
+}
+
+a.button.light-blue {
+  background: $lightBlue;
+  color: lighten($darkBlue, 10%);
+  border: 2px solid rgba($darkBlue, 0.5);
+  &:hover {
+    background: darken($lightBlue, 10%);
+  }
+  &:active, &:visited {
+    color: lighten($darkBlue, 10%);
+  }
+}
+
+.socials ul li {
+  color: white;
+  list-style-type: none;
+  font-size: 24px;
+  a {
+    color: white;
+  }
+}
+
+.dark-hero {
+  color: white;
+  background: $darkBlue;
+  padding: 1px 20px 65px;
+  h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  p {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0 auto 15px;
+    text-align: center;
+  }
+  .socials ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .socials li {
+    padding: 0px 10px;
+    display: inline;
+    float: left;
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+}
+
+.dark-hero.home p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.dark-hero .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  padding: 2vw 4vw 5vw;
-  gap: 3vw;
+  gap: 50px;
   h2 {
-    margin-bottom: 0.2em;
+    margin-bottom: 0.2rem;
   }
   h3 {
-    margin-top: 0.2em;
+    margin-top: 0.2rem;
   }
   a.button {
-    width: 16em;
-    margin-bottom: 1.4em;
+    width: 150px;
+    margin-bottom: 1.4rem;
   }
   p {
-    margin-top: 0em;
+    margin-top: 0;
   }
+  margin:  0 40px;
 }
 
 .title-container {
-  h1 {
-    font-size: 1.9em;
-    line-height: 1.3;
-    margin: 0px;
+  p {
+    font-size: 1.2rem;
+    margin: 0 0 25px;
     color: $titleText;
-    padding: 0px 0px 4vh;
   }
-  padding: 20px 20px 40px;
+}
+
+.community-waitlist {
+  background: $lightBlue;
+  h1 {
+    margin-top: 0px;
+  }
 }
 
 .class-wrapper {
@@ -149,6 +237,26 @@ a.button {
   span {
     font-weight: 700;
   }
+}
+
+.about-container {
+  padding: 80px 20px;
+  text-align: center;
+  background: $offWhite;
+  p {
+    max-width: 750px;
+    font-size: 1.4rem;
+    margin: 0 auto 80px;
+  }
+  img {
+    max-width: 450px;
+  }
+}
+
+.card {
+  background: $offWhite;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 /* Responsive video */
@@ -178,34 +286,20 @@ a.button {
 }
 
 .announcement {
-  padding: 2vw 4vw;
-  background: $button;
+  background: $lightBackground2;
   text-align: center;
   span {
     white-space: nowrap;
   }
   p {
     color: white;
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
   a {
     color: white;
     &:active, &:visited, &:hover {
       color: white;
     }
-  }
-}
-
-.problem-solution-grid {
-  background: $lightBackground;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 2vw 4vw;
-  gap: 3vw;
-  h2 {
-    line-height: 1.6;
-    font-size: 1.3em;
-    color: $darkGrey;
   }
 }
 
@@ -222,7 +316,6 @@ a.button {
     "podcast-text podcast-image"
     "award-image award-text"
     "book-text book-image";
-  padding: 6vw 4vw;
   gap: 6vw 4vw;
 }
 
@@ -266,27 +359,13 @@ a.button {
 }
 
 @media only screen and (max-width: 600px) {
-  .announcement {
-    padding: 2vw 4vw;
-  }
-
-  .problem-solution-grid {
-    display: block;
-    padding: 2vw 4vw;
-    h2 {
-      font-size: 1.3em;
-      line-height: 1.6;
-    }
-  }
-
   .resources-grid {
     display: block;
-    padding: 0 4vw 8vw;
     a {
-      font-size: 1.2em;
+      font-size: 1.2rem;
     }
     h2 {
-      font-size: 1.3em;
+      font-size: 1.3rem;
     }
 
     > div {
@@ -302,92 +381,48 @@ a.button {
 @media only screen and (max-width: 1200px) {
   .hero {
     display: block;
-    padding: 0vw 4vw 4vw;
-    margin-bottom: 4vw;
     a {
         font-size: 20px;
       }
     .title-container {
-      margin: 0px 0px 50px;
       width: 100%;
-      h1 {
-        font-size: 1.5em;
-        margin: 0px 0px 10px;
-        padding: 20px 0px;
+      p {
+        margin-top: 40px;
       }
     }
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  .container {
-    margin: 0 8vw;
-  }
-  
   .hero {
     .title-container {
       h1 {
-        font-size: 2.6em;
+        font-size: 2.6rem;
         margin: 0px;
       }
     }
   }
 
-  .problem-solution-grid {
-    h2 {
-      font-size: 1.4em;
-    }
-  }
-
   .resources-grid {
-    padding: 6vw 4vw 4vw;
-    gap: 6vw 4vw;
+    gap: 4vw;
   }
 }
 
-@media only screen and (min-width: 1600px) {
-  .container {
-    margin: 0 10vw;
-  }
-
-  .announcement {
-    padding: 2vw 10vw;
-  }
-
-  .problem-solution-grid {
-    padding: 2vw 10vw;
-    gap: 4vw;
-  }
-
-  .resources-grid {
-    padding: 6vw 10vw 4vw;
-    gap: 4vw;
+@media only screen and (min-width: 1500px) {
+  .container, .testimonial-grid {
+    padding: 80px 20px;
   }
 }
 
 @media only screen and (min-width: 2000px) {
-  .container {
-    margin: 0 14vw;
-  }
-  
   .hero {
     .title-container h1 {
-        font-size: 3em;
+        font-size: 3rem;
         margin: 0px;
     }
   }
 
   .class-wrapper {
     margin-top: 60px;
-  }
-
-  .problem-solution-grid {
-    padding: 2vw 14vw;
-    gap: 6vw;
-  }
-
-  .resources-grid {
-    padding: 6vw 14vw;
-    gap: 6vw;
   }
 }

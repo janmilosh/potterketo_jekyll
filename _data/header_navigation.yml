@@ -1,0 +1,10 @@
+- name: Our Team
+  link: /team
+- name: The Diet
+  link: /diet
+- name: Services
+  link: /services
+- name: Training
+  link: /training
+- name: Resources
+  link: /resources
