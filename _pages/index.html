@@ -4,24 +4,26 @@ layout: default
 permalink: /
 ---
 {% include other_home_page_items/hero_title_on_side.html %}
+{% include community_waitlist.html %}
+<div class="container">
+  <div class="resources-grid">
+    <div class="boundless-body-text text">{% include resources_grid_items/boundless_body_text.html %}</div>
+    <div class="boundless-body-image">{% include resources_grid_items/boundless_body_image.html %}</div>
+    <div class="mastery-image">{% include resources_grid_items/mastery_image.html %}</div>
+    <div class="mastery-text text">{% include resources_grid_items/mastery_text.html %}</div>
+    <div class="podcast-image">{% include resources_grid_items/podcast_image.html %}</div>
+    <div class="podcast-text text">{% include resources_grid_items/podcast_text.html %}</div>
+    <div class="award-image">{% include resources_grid_items/metabolic_mind_image.html %}</div>
+    <div class="award-text text">{% include resources_grid_items/metabolic_mind_text.html %}</div>
+    <div class="book-image">{% include resources_grid_items/book_image.html %}</div>
+    <div class="book-text text">{% include resources_grid_items/book_text.html %}</div>
+  </div>
+</div>
 <div class="announcement">
-  <p>Matt Baszucki was able to successfully manage severe bipolar disorder with the help of a ketogenic diet. See him share his story on <span><a href="https://www.today.com/health/mind-body/keto-diet-mental-health-dr-chris-palmer-rcna139262" target="_blank"><em>The Today Show</em></a>.</span></p>
-</div>
-<div class="problem-solution-grid">
-  <div class="problem">{% include other_home_page_items/problem_statement.html %}</div>
-  <div class="solution">{% include other_home_page_items/solution_statement.html %}</div>
-</div>
-<div class="resources-grid">
-  <div class="boundless-body-text text">{% include resources_grid_items/boundless_body_text.html %}</div>
-  <div class="boundless-body-image">{% include resources_grid_items/boundless_body_image.html %}</div>
-  <div class="mastery-image">{% include resources_grid_items/mastery_image.html %}</div>
-  <div class="mastery-text text">{% include resources_grid_items/mastery_text.html %}</div>
-  <div class="podcast-image">{% include resources_grid_items/podcast_image.html %}</div>
-  <div class="podcast-text text">{% include resources_grid_items/podcast_text.html %}</div>
-  <div class="award-image">{% include resources_grid_items/metabolic_mind_image.html %}</div>
-  <div class="award-text text">{% include resources_grid_items/metabolic_mind_text.html %}</div>
-  <div class="book-image">{% include resources_grid_items/book_image.html %}</div>
-  <div class="book-text text">{% include resources_grid_items/book_text.html %}</div>
+  <div class="text-container">
+    <p>Matt Baszucki was able to successfully manage severe bipolar disorder with the help of a ketogenic diet. See him share his story on <span><a href="https://www.today.com/health/mind-body/keto-diet-mental-health-dr-chris-palmer-rcna139262" target="_blank"><em>The Today Show</em></a>.</span></p>
+  </div>
 </div>
 {% include other_home_page_items/videos.html %}
 {% include other_home_page_items/testimonials.html %}
+{% include other_home_page_items/about.html %}

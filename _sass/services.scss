@@ -1,13 +1,9 @@
-.services-container {
-  max-width: 1300px;
-  margin: 0 auto 50px;
-}
-
 .services-grid {
   display: grid;
   gap: 40px;
-  margin: 50px 0;
+  margin-bottom: 50px;
   grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: center;
 }
 
 .service {
@@ -18,12 +14,8 @@
   border-radius: 4px;
   padding: 1px 25px 35px;
   h2 {
-    font-size: 1.8em;
-    font-weight: 300;
+    font-size: 1.8rem;
     margin-bottom: 0;
-  }
-  ul li {
-    margin-bottom: 8px;
   }
   p, ul {
     margin-bottom: 25px;
@@ -32,7 +24,7 @@
 
 .service.one-hour {
   grid-template-rows: auto auto min-content;
-  .button-white {
+  .button.white {
     width: 100%;
   }
 }
@@ -57,8 +49,5 @@
       width: 100%;
       margin-bottom: 25px;
     }
-  }
-  .services-container {
-    margin: 0 4vw 50px;
   }
 }

@@ -4,9 +4,8 @@
   gap: 6vw;
 }
 
-footer  {
+footer {
   background: $footerBackground;
-  padding: 6vw 4vw;
   color: white;
   a {
     color: white;
@@ -24,9 +23,10 @@ footer  {
   }
 
   h2 {
-    font-size: 1.3em;
-    margin: 0;
+    font-size: 1.3rem;
     color: white;
+    font-weight: 400;
+    margin-top: 0;
   }
 
   p {
@@ -41,7 +41,7 @@ footer  {
     background: white;
     color: $darkGrey;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     padding: 10px 20px;
     border-radius: 5px;
     white-space: nowrap;
@@ -60,10 +60,6 @@ footer  {
 }
 
 @media only screen and (max-width: 600px) {
-  footer {
-    padding-bottom: 4vw;
-  }
-
   .footer-grid {
     grid-template-columns: 1fr 1fr;
 
@@ -83,23 +79,5 @@ footer  {
 
   footer p {
     text-align: center;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  footer {
-    padding: 6vw 8vw;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  footer {
-    padding: 6vw 10vw;
-  }
-}
-
-@media only screen and (min-width: 2000px) {
-  footer {
-    padding: 6vw 14vw;
   }
 }
