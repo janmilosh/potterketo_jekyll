@@ -1,0 +1,28 @@
+.media-outer {
+  background: $offWhite;
+}
+
+.media-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  img {
+    width: 100%;
+  }
+  .center-vertically {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .media-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

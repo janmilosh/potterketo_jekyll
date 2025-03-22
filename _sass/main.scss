@@ -28,13 +28,15 @@ body {
   padding: 60px 20px;
 }
 
-.text-container {
-  padding: 60px 20px;
-  margin: 0 auto;
+.container.small {
   max-width: 900px;
   img {
     margin-bottom: 1rem;
   }
+}
+
+.container.large {
+  max-width: 1500px;
 }
 
 .container.education-materials {
@@ -43,6 +45,10 @@ body {
 
 img {
   width: 100%;
+}
+
+.video-container, img {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
@@ -206,7 +212,6 @@ a.button.light-blue {
   p {
     margin-top: 0;
   }
-  margin:  0 40px;
 }
 
 .title-container {
@@ -245,7 +250,7 @@ a.button.light-blue {
   background: $offWhite;
   p {
     max-width: 750px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 0 auto 80px;
   }
   img {
@@ -277,14 +282,6 @@ a.button.light-blue {
 	height: 100%;
 }
 
-.video-wrapper {
-	box-shadow: 0 0 8px rgba(0,0,0,0.6);
-	width: 1000px;
-	max-width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .announcement {
   background: $lightBackground2;
   text-align: center;
@@ -311,11 +308,9 @@ a.button.light-blue {
   align-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "boundless-body-text boundless-body-image"
     "mastery-image mastery-text"
-    "podcast-text podcast-image"
-    "award-image award-text"
-    "book-text book-image";
+    "book-text book-image"
+    "award-image award-text";
   gap: 6vw 4vw;
 }
 
@@ -337,9 +332,6 @@ a.button.light-blue {
 
 .mastery-image {
   grid-area: mastery-image;
-  img {
-    border: 2px solid $lightBackground2;
-  }
 }
 
 .mastery-text {
@@ -358,7 +350,7 @@ a.button.light-blue {
   grid-area: boundless-body-text;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .resources-grid {
     display: block;
     a {
@@ -378,7 +370,7 @@ a.button.light-blue {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 950px) {
   .hero {
     display: block;
     a {
