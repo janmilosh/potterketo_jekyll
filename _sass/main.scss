@@ -114,7 +114,7 @@ a.button {
 a.button.white {
   background: white;
   color: lighten($darkBlue, 10%);
-  border: 2px solid rgba($darkBlue, 0.5);
+  border: 2px solid rgba($darkBlue, 0.8);
   &:hover {
     background: $offWhite;
   }
@@ -126,7 +126,7 @@ a.button.white {
 a.button.light-blue {
   background: $lightBlue;
   color: lighten($darkBlue, 10%);
-  border: 2px solid rgba($darkBlue, 0.5);
+  border: 2px solid rgba($darkBlue, 0.8);
   &:hover {
     background: darken($lightBlue, 10%);
   }
