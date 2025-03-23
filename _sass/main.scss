@@ -184,14 +184,20 @@ a.button.light-blue {
   }
 }
 
-.dark-hero.home p {
-  font-size: 2rem;
-  font-weight: 500;
+.dark-hero.home {
+  padding-top: 40px;
+  padding-bottom: 140px;
+  p {
+    font-size: 2rem;
+    font-weight: 500;
+  }
 }
 
 .dark-hero .container {
   max-width: 1050px;
   margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .hero {
@@ -258,7 +264,8 @@ a.button.light-blue {
   }
 }
 
-.card {
+p.card {
+  margin-top: 60px;
   background: $offWhite;
   padding: 20px;
   border-radius: 8px;
