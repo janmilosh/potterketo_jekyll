@@ -20,19 +20,28 @@ window.onload = (event) => {
   toggle.addEventListener("click", toggleMenu);
 
   // Testimonials slider
-  var slideIndex = 0;
-  carousel();
+  const leftArrow = document.querySelector("#left-arrow");
+  const rightArrow = document.querySelector("#right-arrow");
 
-  function carousel() {
+  leftArrow.addEventListener("click", function() { plusDivs(-1) }, false);
+  rightArrow.addEventListener("click", function() { plusDivs(1) }, false);
+
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("testimonial");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 18000);
   }
 
   // Year for footer
