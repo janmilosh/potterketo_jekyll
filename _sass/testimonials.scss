@@ -38,6 +38,18 @@
 
 @media only screen and (max-width: 600px) {
   .testimonials {
-    height: 480px;
+    height: 460px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .testimonials {
+    height: 580px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .testimonials {
+    height: 650px;
   }
 }
