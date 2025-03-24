@@ -25,7 +25,7 @@ body {
 .container {
   max-width: 1340px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 80px 24px;
 }
 
 .container.small {
@@ -250,10 +250,8 @@ a.button.light-blue {
   }
 }
 
-.about-container {
-  padding: 80px 20px;
+.about {
   text-align: center;
-  background: $offWhite;
   p {
     max-width: 750px;
     font-size: 1.3rem;
