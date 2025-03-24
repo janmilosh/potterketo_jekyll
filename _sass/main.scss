@@ -365,12 +365,15 @@ p.card {
       font-size: 1.3rem;
     }
 
-    > div {
-      margin-top: 10vw;
-    }
-
     .text {
       margin-top: 10px;
+    }
+
+    > div {
+      margin-top: 50px;
+      &:first-child {
+        margin-top: 0;
+      }
     }
   }
 }
