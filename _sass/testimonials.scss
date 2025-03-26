@@ -23,6 +23,9 @@
   max-width: 800px;
   position:relative;
   animation: opac 4s;
+  &:first-child {
+    display: block;
+  }
   p {
     margin: 0;
   }
