@@ -23,11 +23,13 @@ window.onload = (event) => {
   const leftArrow = document.querySelector("#left-arrow");
   const rightArrow = document.querySelector("#right-arrow");
 
-  leftArrow.addEventListener("click", function() { plusDivs(-1) }, false);
-  rightArrow.addEventListener("click", function() { plusDivs(1) }, false);
+  if (leftArrow && rightArrow) {
+    leftArrow.addEventListener("click", function() { plusDivs(-1) }, false);
+    rightArrow.addEventListener("click", function() { plusDivs(1) }, false);
 
-  var slideIndex = 1;
-  showDivs(slideIndex);
+    var slideIndex = 1;
+    showDivs(slideIndex);
+  }
 
   function plusDivs(n) {
     showDivs(slideIndex += n);
