@@ -52,6 +52,11 @@ img {
   border-radius: 5px;
 }
 
+.service img {
+  box-shadow: none;
+  border-radius: none;
+}
+
 .center {
   text-align: center;
 }
@@ -313,10 +318,19 @@ a.button.light-blue {
   align-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
+    "community-text community-image"
     "mastery-image mastery-text"
     "book-text book-image"
     "award-image award-text";
   gap: 6vw 4vw;
+}
+
+.community-image {
+  grid-area: community-image;
+}
+
+.community-text {
+  grid-area: community-text;
 }
 
 .book-image {
