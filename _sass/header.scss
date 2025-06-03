@@ -27,10 +27,10 @@ header {
   
   ul.menu {
     display: grid;
-    grid-template-columns: 1fr repeat(7, max-content);
+    grid-template-columns: 1fr repeat(8, max-content);
     align-items: center;
     grid-auto-flow: column;
-    gap: 30px;
+    gap: 20px;
   }
   
   .logo img {
@@ -122,6 +122,11 @@ header {
     ul.menu li:nth-child(9) {
       grid-column: 1 / span 2;
       grid-row: 8;
+    }
+
+    ul.menu li:nth-child(10) {
+      grid-column: 1 / span 2;
+      grid-row: 9;
     }
   }
 }
