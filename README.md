@@ -2,13 +2,11 @@
 
 Built with [Jekyll](http://jekyllrb.com/) using Ruby 3.1.2.
 
-Build for production: `"bundle exec jekyll build --baseurl=''"`<br>
-Build for gh-pages: `"bundle exec jekyll build  --baseurl='potterketo_jekyll'"`<br>
 Serve for local development: `"bundle exec jekyll serve --livereload"` 
 
 To deploy:
 1. Push commits to GitHub on branch `git push origin <branchname>`
-2. Create PR and merge commits
-3. Update local main branch `git checkout main` `git pull origin main`
-4. Delete old branch `git branch -d <branchname>`
-5. Deploy to remote server `./deploy`
+2. Create a Pull Request, and if changes are satisfactory, click "Merge pull request".
+3. The site is hosted on Digital Ocean. A build and deploy will be automatically triggered by the PR merge.
+4. Update local main branch `git checkout main` `git pull origin main`
+5. Delete old branch `git branch -d <branchname>`
