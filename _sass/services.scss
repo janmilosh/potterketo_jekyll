@@ -8,7 +8,7 @@
 .service {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: min-content auto 51px;
+  grid-template-rows: min-content min-content auto 51px;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.075);
   border-radius: 4px;
   padding: 1px 25px 35px;
@@ -19,6 +19,10 @@
   p, ul {
     margin-bottom: 25px;
   }
+}
+
+.service h2.add-margin {
+  margin-bottom: 25px;
 }
 
 .service.one-hour {
