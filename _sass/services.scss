@@ -25,11 +25,8 @@
   margin-bottom: 25px;
 }
 
-.service.one-hour {
-  grid-template-rows: auto auto min-content;
-  .button.white {
-    width: 100%;
-  }
+.services a.button {
+  margin-top: 25px;
 }
 
 @media only screen and (max-width: 1340px) {
