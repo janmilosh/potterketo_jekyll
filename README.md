@@ -1,4 +1,4 @@
-# Potterketo Website
+# Advanced Ketogenic Therapies Website
 
 Built with [Jekyll](http://jekyllrb.com/) using Ruby 3.1.2.
 
